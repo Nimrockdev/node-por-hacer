@@ -8,7 +8,7 @@ let comando = argv._[0];
 switch (comando) {
 
     case 'crear':
-        console.log(argv.descripcion);
+        //console.log(argv.descripcion);
         let tarea = porHacer.crear(argv.descripcion)
         console.log(tarea);
         break;

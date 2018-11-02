@@ -37,6 +37,7 @@ const getListado = () => {
 
 const actualizar = (descripcion, completado = true) => {
     cargarDB();
+    /*Devuelve el indice de la tarea que coincida con la descripcion*/
     let index = listadoPorHacer.findIndex(tarea => {
         return tarea.descripcion === descripcion
     })
@@ -52,6 +53,7 @@ const actualizar = (descripcion, completado = true) => {
 
 const borrar = (descripcion) => {
     cargarDB();
+    /*Devuelve el listado nuevo, sin la tarea de la descripcion*/
     let nuevoListado = listadoPorHacer.filter(tarea => {
         return tarea.descripcion !== descripcion
     });
@@ -63,6 +65,7 @@ const borrar = (descripcion) => {
         return true;
     }
 }
+
 module.exports = {
     crear,
     getListado,

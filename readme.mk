@@ -1,7 +1,9 @@
 #Leer
 
 ##Instalar
-npm install
+npm init
+npm install yargs
+npm install colors
 
 ##Comandos
 node app crear -d 'tarea'

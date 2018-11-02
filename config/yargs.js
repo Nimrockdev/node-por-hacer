@@ -9,11 +9,12 @@ const completado = {
     alias: 'c',
     desc: 'Marca como completado o pendiente la tarea'
 }
+
 const argv = require('yargs')
-    .command('crear', 'Crear un elemento por hacer', {
+    .command('crear', 'Crear un tarea', {
         descripcion
     })
-    .command('actualizar', 'Actualiza el estado completado de una tarea', {
+    .command('actualizar', 'Actualiza el estado de una tarea a completado', {
         descripcion,
         completado
     })
